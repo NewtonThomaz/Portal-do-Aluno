@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login {
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (width < 750px) {
+    .login {
+     background-image: url('../img/background-mobile.png');
+    }
+}
+.login-form {
+    background-color: #F0F0F0;
+    border-radius: 15px;
+    height: 360px;
+    width: 360px;
+    h1 {
+        width: 100%;
+        text-align: center;
+        margin-block: 20px;
+    }
+}
+.user-input,
+.password-input{
+    background-color: #F0F0F0;
+    border: 1px solid #8C8C8C;
+    border-radius: 15px;
+    height: 50px;
+    width: 270px;
+    margin-inline: 45px;
+}
+.user-input {
+    position: absolute;
+}
+.user-icon,
+.eye-close-icon,
+.padlock-icon {
+    width: 30px;
+    position: relative;
+}
+.user-icon {
+    margin-left: 60px;
+    margin-top: -15px;
+}
+    
