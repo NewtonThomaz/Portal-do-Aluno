@@ -7,13 +7,9 @@
     text-decoration: none;
 }
 
-/*
-fazer a responsividade do login do celular para desktop
-.login {
-    background-image: url('../img/planoFundo.png');
-}
-@media (width < 750px) {}
-*/
+
+/*fazer a responsividade do login do celular para desktop*/
+
 .login {
     display: flex;
     align-items: center;
@@ -91,6 +87,7 @@ fazer a responsividade do login do celular para desktop
                 font-size: 0.9rem;
                 margin-left: 5px;
             }
+
             .oculto {
                 visibility: hidden;
             }
@@ -113,5 +110,11 @@ fazer a responsividade do login do celular para desktop
             width: 130px;
             cursor: pointer;
         }
+    }
+}
+
+@media (width > 550px) {
+    .login {
+        background-image: url('../img/planoFundo.png');
     }
 }
