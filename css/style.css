@@ -111,6 +111,7 @@ fazer a responsividade do login do celular para desktop
             justify-content: center;
             height: 51px;
             width: 130px;
+            cursor: pointer;
         }
     }
 }
