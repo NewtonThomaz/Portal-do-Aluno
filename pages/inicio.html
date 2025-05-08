@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>Início</title>
+</head>
+
+<body>
+    <nav>
+        <section id="lupa" onclick="openSearch()">
+            <img src="../img/search.png" alt="lupa de pesquisa">
+            <input type="text" id="search" placeholder="Pesquisar..." class="search" style="display: none;">
+        </section>
+        <img src="../img/loog sesi.jpeg" alt="logo sesi" class="sesi">
+
+        <section id="overlay"></section>
+        <section id="sidebar">
+            <section>
+                <a href="">Vestibulares</a>
+                <a href="">Exames</a>
+                <a href="">Olimpiadas</a>
+                <a href="">Material Didatico</a>
+                <a href="">Cronograma</a>
+                <a href="">Boletim</a>
+                <a href="">Matérias</a>
+            </section>
+            <section class="sessao">
+                <button onclick="window.location.href = '../index.html'" class="sair">Sair</button>
+                <img src="../img/user_icon.png" alt="icone de usuario">
+            </section>
+        </section>
+
+        <section id="toggleSidebar">
+            <figure></figure>
+            <figure class="diferente"></figure>
+            <figure></figure>
+        </section>
+    </nav>
+
+    <section style="height: 430px; background-color: blue;"></section>
+    <main style="background-color: black; height: 150dvh; "></main>
+    
+    <script src="../js/default.js" defer></script>
+</body>
+
+</html>

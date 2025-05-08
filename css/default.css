@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  padding: 15px 15px 0 15px;
+  position: fixed;
+
+  img {
+    height: 30px;
+  }
+
+  #lupa {
+    cursor: pointer;
+  }
+
+  .sesi {
+    margin-top: auto;
+  }
+
+  #toggleSidebar {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 30px;
+    justify-content: space-between;
+    cursor: pointer;
+
+    figure {
+      width: 100%;
+      height: 6.23px;
+      background-color: #ffffff;
+      border-radius: 15px;
+    }
+
+    .diferente {
+      width: 18px;
+      background-color: #ed1c24;
+      margin-left: auto;
+    }
+  }
+
+  #lupa:hover {
+    transform: scale(1.08);
+    transition: 0.5s ease;
+  }
+
+  #toggleSidebar:hover {
+    transform: scale(1.08);
+
+    figure {
+      transition: 0.5s ease;
+      background-color: #ed1c24;
+      animation-duration: 3s;
+    }
+
+    .diferente {
+      width: 100%;
+    }
+  }
+}
+
+#sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 230px;
+  background-color: #ed1c24;
+  color: white;
+  /* padding: 20px; */
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1001;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  a {
+    padding: 8px 32px 8px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin: 13px 0 0 20px;
+  }
+
+  section a {
+    position: relative;
+  }
+
+  section a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: calc(100% - 20px);
+    border-bottom: 2px solid #ffffff;
+    border-radius: 3px;
+  }
+}
+
+.sessao {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+  gap: 15px;
+  margin: 0 20px 20px 0;
+
+  .sair {
+    cursor: pointer;
+    background-color: #8C8C8C;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 60px;
+    font-size: 17px;
+    padding-inline: 14px;
+  }
+
+  img {
+    height: 40px;
+    cursor: pointer;
+  }
+}
+
+#sidebar.active {
+  transform: translateX(0);
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.6;
+  display: none;
+  z-index: 1000;
+}
+
+#overlay.active {
+  display: block;
+  transition: display 0.3s ease;
+}
